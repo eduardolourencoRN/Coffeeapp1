@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "appcafeteria",
+    "slug": "appcafeteria",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-font"
+    ],
+    "android": {
+      "package": "com.eduardostark23.appcafeteria"
+    }
+  }
+}
