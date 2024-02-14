@@ -157,6 +157,7 @@ function HomeScreen({ navigation, route }) {
                                         selectedCategory === item && {
                                             backgroundColor:
                                                 COLORS.primaryOrangeHex,
+                                            width: item.lenght > 6 && 150,
                                         },
                                     ]}
                                 >

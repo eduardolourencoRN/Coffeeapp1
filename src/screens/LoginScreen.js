@@ -41,7 +41,7 @@ const LoginScreen = ({ navigation }) => {
 
             if (response.ok) {
                 const { user, token } = data;
-
+                Keyboard.dismiss();
                 await AsyncStorage.setItem('userData', JSON.stringify(user));
 
                 await AsyncStorage.setItem('token', token);

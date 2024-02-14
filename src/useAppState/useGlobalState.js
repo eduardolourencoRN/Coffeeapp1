@@ -22,7 +22,7 @@ const useCoffeeStore = create((set) => ({
             user: {
                 isLoggedIn: false,
                 userData: null,
-                username: '', // Certifique-se de limpar o nome de usuário no logout
+                username: '',
             },
         })),
     updateUser: (newUserData) =>

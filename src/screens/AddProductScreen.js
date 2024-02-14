@@ -17,6 +17,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 import styles from '../styles/styles';
+import { Picker } from '@react-native-picker/picker';
+import CustomPicker from '../utils/CustomPicker';
 export default function AddProductScreen({ navigation }) {
     const [token, setToken] = useState(null);
     const [image, setImage] = useState(null);
@@ -145,8 +147,37 @@ export default function AddProductScreen({ navigation }) {
             console.log('User ID:', userID);
         }, [checkToken]),
     );
-
+    const [selectedLanguage, setSelectedLanguage] = useState();
     console.log('Image:', image);
+    const [categories, setCategories] = useState([]);
+    useEffect(() => {
+        // Função para carregar as categorias ao montar o componente
+        const fetchCategories = async () => {
+            try {
+                // Faz uma requisição GET para a rota '/categories'
+                const response = await fetch(
+                    'http://192.168.100.129:3000/categories',
+                );
+
+                // Verifica se a requisição foi bem-sucedida
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar categorias');
+                }
+
+                // Converte a resposta para JSON
+                const data = await response.json();
+
+                // Define o estado das categorias com os dados recebidos da resposta
+                setCategories(data.categories);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+
+        // Chama a função para carregar as categorias
+        fetchCategories();
+    }, []);
+
     return (
         <View style={stylesx.container}>
             <Text style={stylesx.header}>Adicionar Produtos</Text>
@@ -177,6 +208,7 @@ export default function AddProductScreen({ navigation }) {
                     </View>
                 </TouchableOpacity>
             )}
+
             <TextInput
                 style={stylesx.input}
                 placeholder='Product Name'
@@ -207,6 +239,16 @@ export default function AddProductScreen({ navigation }) {
                 onChangeText={setDescription}
                 placeholderTextColor={'white'}
             />
+            <CustomPicker
+                options={categories.map((category) => ({
+                    label: category.name,
+                    value: category.id,
+                }))}
+                onSelect={(selectedCategory) =>
+                    console.log('Categoria selecionada:', selectedCategory)
+                }
+            />
+
             <TextInput
                 style={stylesx.input}
                 placeholder='Category ID'
@@ -214,6 +256,7 @@ export default function AddProductScreen({ navigation }) {
                 onChangeText={setCategoryId}
                 placeholderTextColor={'white'}
             />
+
             {/* <TouchableOpacity
                 style={{
                     width: 100,

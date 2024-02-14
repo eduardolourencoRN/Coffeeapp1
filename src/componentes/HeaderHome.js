@@ -121,9 +121,15 @@ function HeaderHome({ navigation }) {
                     <Image
                         style={{
                             marginTop: 20,
-                            width: width * 0.12,
+                            width:
+                                Platform.OS === 'ios'
+                                    ? width * 0.17
+                                    : width * 0.12,
                             marginRight: 20,
-                            height: height * 0.07,
+                            height:
+                                Platform.OS === 'ios'
+                                    ? height * 0.07
+                                    : height * 0.06,
                             borderRadius: 40,
                             alignItems: 'center',
                             justifyContent: 'center',
