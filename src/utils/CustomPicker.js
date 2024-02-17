@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     View,
     Text,
@@ -11,6 +11,18 @@ import COLORS from '../colors/colors';
 
 const CustomPicker = ({ options, selectedValue, onSelect }) => {
     const [modalVisible, setModalVisible] = useState(false);
+    const [currentSelectedValue, setCurrentSelectedValue] =
+        useState(selectedValue);
+
+    useEffect(() => {
+        setCurrentSelectedValue(selectedValue);
+    }, [selectedValue]);
+
+    const handleSelect = (categoryName) => {
+        onSelect(categoryName); // Aqui alterei para passar o nome da categoria
+        setCurrentSelectedValue(categoryName);
+        setModalVisible(false);
+    };
 
     return (
         <View style={styles.container}>
@@ -18,7 +30,11 @@ const CustomPicker = ({ options, selectedValue, onSelect }) => {
                 style={styles.pickerButton}
                 onPress={() => setModalVisible(true)}
             >
-                <Text style={styles.selectedValue}>{selectedValue}</Text>
+                <Text style={styles.selectedValue}>
+                    {currentSelectedValue
+                        ? currentSelectedValue
+                        : 'Selecione uma opção'}
+                </Text>
             </TouchableOpacity>
             <Modal
                 visible={modalVisible}
@@ -38,8 +54,7 @@ const CustomPicker = ({ options, selectedValue, onSelect }) => {
                             <TouchableOpacity
                                 style={styles.optionItem}
                                 onPress={() => {
-                                    onSelect(item.value);
-                                    setModalVisible(false);
+                                    handleSelect(item.label); // Aqui estou passando o nome da categoria
                                 }}
                             >
                                 <Text style={styles.optionText}>
@@ -61,7 +76,7 @@ const styles = StyleSheet.create({
         borderColor: 'gray',
         borderWidth: 1,
         marginBottom: 10,
-        paddingHorizontal: 10,
+
         borderRadius: 12,
         borderColor: COLORS.primaryOrangeHex,
         color: 'white',
@@ -94,6 +109,7 @@ const styles = StyleSheet.create({
     },
     optionText: {
         color: 'white',
+        fontSize: 17,
     },
 });
 

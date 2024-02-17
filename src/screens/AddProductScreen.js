@@ -145,7 +145,6 @@ export default function AddProductScreen({ navigation }) {
             console.log('User ID:', userID);
         }, [checkToken]),
     );
-    const [selectedLanguage, setSelectedLanguage] = useState();
     console.log('Image:', image);
     const [categories, setCategories] = useState([]);
     useEffect(() => {
@@ -235,17 +234,12 @@ export default function AddProductScreen({ navigation }) {
                     label: category.name,
                     value: category.id,
                 }))}
-                onSelect={(selectedCategory) =>
-                    console.log('Categoria selecionada:', selectedCategory)
-                }
+                onSelect={(selectedCategory) => {
+                    setCategoryId(selectedCategory);
+                    console.log('selected', selectedCategory);
+                }}
             />
-            <TextInput
-                style={stylesx.input}
-                placeholder='Category ID'
-                value={categoryId}
-                onChangeText={setCategoryId}
-                placeholderTextColor={'white'}
-            />
+
             <TouchableOpacity
                 style={{
                     width: 140,
