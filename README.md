@@ -11,7 +11,7 @@ Para começar a usar o CoffeeApp, siga os passos abaixo:
 
 Clone o repositório para o seu ambiente local:
 ```bash
-git clone https://github.com/sr-scanor/CoffeeApp
+git clone https://github.com/sr-scanor/CoffeeApp1
 cd CoffeeApp
 ````
 Instale as dependências do projeto:
