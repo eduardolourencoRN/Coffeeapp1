@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import {
+    View,
+    TouchableOpacity,
+    Text,
+    StyleSheet,
+    Platform,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import COLORS from '../colors/colors';
 import useCoffeeStore from '../useAppState/useGlobalState';
@@ -18,7 +24,12 @@ const FloatingButton = ({ onPress }) => {
     console.log(`Total Unique Items: ${totalQuantity}`);
 
     return (
-        <View style={[styles.container, { marginBottom: 50 }]}>
+        <View
+            style={[
+                styles.container,
+                { marginBottom: Platform.OS === 'android' ? 50 : 100 },
+            ]}
+        >
             <TouchableOpacity style={styles.button} onPress={onPress}>
                 <View
                     style={{
@@ -38,6 +49,7 @@ const FloatingButton = ({ onPress }) => {
                         style={{
                             height: 20,
                             color: '#000',
+                            marginTop: Platform.OS === 'android' ? 0 : 2,
                         }}
                     >
                         {totalQuantity}

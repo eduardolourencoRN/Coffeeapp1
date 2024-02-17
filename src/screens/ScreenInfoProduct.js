@@ -13,7 +13,6 @@ import Star from 'react-native-star-view';
 import Icon from 'react-native-vector-icons/Octicons';
 import useCoffeeStore from '../useAppState/useGlobalState';
 import styles from '../styles/styles';
-import CustomTextInput from '../componentes/CustomTextInput';
 import { baseURL } from '../api/apiConfig';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
     View,
     Text,
@@ -7,6 +7,7 @@ import {
     TouchableOpacity,
     RefreshControl,
     Image,
+    Animated,
 } from 'react-native';
 import styles from '../styles/styles';
 import FloatingButton from '../componentes/FloatingButton';
@@ -25,6 +26,7 @@ function HomeScreen({ navigation, route }) {
     const [refreshing, setRefreshing] = useState(false);
     const [categories, setCategories] = useState([]);
     const [name, setName] = useState('');
+
     useEffect(() => {
         checkToken();
         getProducts();
@@ -112,7 +114,7 @@ function HomeScreen({ navigation, route }) {
             const userDataJSON = await AsyncStorage.getItem('userData');
             if (userDataJSON !== null) {
                 const userData = JSON.parse(userDataJSON);
-                // Agora você pode usar os dados do usuário (userData) como necessário
+
                 const username = userData.username;
                 setName(username);
             } else {
@@ -175,7 +177,7 @@ function HomeScreen({ navigation, route }) {
                                     </View>
                                 </TouchableOpacity>
                             )}
-                            keyExtractor={(item, index) => index.toString()} // Usamos o índice como chave, já que categories é um array de strings
+                            keyExtractor={(item, index) => index.toString()}
                             horizontal
                             showsHorizontalScrollIndicator={false}
                         />

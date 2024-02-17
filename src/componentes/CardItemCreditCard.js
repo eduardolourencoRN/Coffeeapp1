@@ -10,7 +10,6 @@ function CardItemCreditCard() {
             const userDataJSON = await AsyncStorage.getItem('userData');
             if (userDataJSON !== null) {
                 const userData = JSON.parse(userDataJSON);
-                // Agora você pode usar os dados do usuário (userData) como necessário
                 const username = userData.username;
                 setName(username);
             } else {

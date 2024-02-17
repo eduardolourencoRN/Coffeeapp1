@@ -17,7 +17,7 @@ const InternetConnectionCheck = () => {
     }, []);
 
     useEffect(() => {
-        console.log('Is connected?', isConnected); // Adicione esta linha para depurar
+        console.log('Is connected?', isConnected);
         if (!isConnected) {
             Alert.alert(
                 'Sem conexão com a Internet',

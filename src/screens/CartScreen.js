@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, Platform, TouchableOpacity } from 'react-native';
 import { View, Text } from 'react-native';
 import styles from '../styles/styles';
-import useCoffeeStore from '../useAppState/useGlobalState'; // Import the Zustand store
+import useCoffeeStore from '../useAppState/useGlobalState';
 import CartFooter from '../componentes/CartFooter';
+import Icon from 'react-native-vector-icons/Octicons';
 import CartItemCart from '../componentes//CardItemCart';
 function HomeScreen({ navigation }) {
     const { cartItems, incrementCartItem, decrementCartItem, removeCartItem } =
@@ -32,8 +33,31 @@ function HomeScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
+            <View
+                style={{
+                    width: '100%',
+                    height: 70,
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    marginTop: Platform.OS === 'ios' ? 50 : 0,
+                }}
+            >
+                <TouchableOpacity
+                    style={styles.containerButtonIConback}
+                    onPress={() => navigation.goBack()}
+                >
+                    <Icon name='chevron-left' size={30} color={'#FFF'} />
+                </TouchableOpacity>
+                <Text
+                    style={[
+                        styles.titleSecondCategory,
+                        { marginLeft: 150, marginTop: 10 },
+                    ]}
+                >
+                    Cart Items
+                </Text>
+            </View>
             <View style={styles.containerCartItems}>
-                <Text style={styles.titleSecondCategory}>Cart Items</Text>
                 {cartItems.length === 0 ? (
                     <Text style={{ color: '#fff' }}>Vazio</Text>
                 ) : (

@@ -5,7 +5,6 @@ import {
     StyleSheet,
     TouchableOpacity,
     RefreshControl,
-    Dimensions,
     ScrollView,
     ActivityIndicator,
     Platform,
@@ -20,27 +19,27 @@ const SellerShopScreen = ({ navigation }) => {
     const [token, setToken] = useState(null);
     const [produtos, setProducts] = useState([]);
     const [refreshing, setRefreshing] = useState(false);
-    const [loadingToken, setLoadingToken] = useState(true); // Estado para controlar o carregamento do token
+    const [loadingToken, setLoadingToken] = useState(true);
     const { user } = useCoffeeStore();
 
     useEffect(() => {
-        checkToken(); // Verifique o token quando a tela for montada
+        checkToken();
     }, []);
 
     useEffect(() => {
         if (token !== null) {
-            getProducts(); // Se o token estiver disponível, carregue os produtos
+            getProducts();
         }
-    }, [token]); // Atualize os produtos sempre que o token mudar
+    }, [token]);
 
     const checkToken = async () => {
         try {
             const token = await AsyncStorage.getItem('token');
             setToken(token);
-            setLoadingToken(false); // Indique que o token foi carregado com sucesso
+            setLoadingToken(false);
         } catch (error) {
             console.error('Error:', error);
-            setLoadingToken(false); // Indique que houve um erro ao carregar o token
+            setLoadingToken(false);
         }
     };
 
@@ -69,7 +68,6 @@ const SellerShopScreen = ({ navigation }) => {
         getProducts();
     };
 
-    // Exiba um indicador de carregamento enquanto o token estiver sendo carregado
     if (loadingToken) {
         return (
             <View style={styles.container}>

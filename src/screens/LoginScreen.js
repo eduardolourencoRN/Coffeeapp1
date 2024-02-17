@@ -16,13 +16,12 @@ import COLORS from '../colors/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const LoginScreen = ({ navigation }) => {
-    const { user } = useCoffeeStore();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
     const [hidepassword, setHidepassword] = useState(false);
-    const setUser = useCoffeeStore((state) => state.login); // Obtenha a função de login do estado global
-    const [isLoading, setIsLoading] = useState(false); // Estado para controlar o carregamento
+    const setUser = useCoffeeStore((state) => state.login);
+    const [isLoading, setIsLoading] = useState(false);
     const login = async () => {
         try {
             setIsLoading(true);

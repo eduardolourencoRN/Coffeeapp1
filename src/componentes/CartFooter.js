@@ -22,7 +22,7 @@ function CartFooter({ totalPrice, onContinue }) {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 paddingHorizontal: 30,
-                marginBottom: Platform.OS === 'android' ? 50 : 50,
+                marginBottom: Platform.OS === 'android' ? 110 : 100,
             }}
         >
             <Text

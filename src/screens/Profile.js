@@ -18,7 +18,7 @@ import { useNavigation } from '@react-navigation/native';
 function Profile() {
     const { logout, user } = useCoffeeStore();
     const navigation = useNavigation();
-    const [isLoading, setIsLoading] = useState(false); // Estado para controlar o carregamento
+    const [isLoading, setIsLoading] = useState(false);
     const [imagem, setImagem] = useState('');
     const [name, setName] = useState('');
     const handleLogout = async () => {
@@ -44,7 +44,6 @@ function Profile() {
             const userDataJSON = await AsyncStorage.getItem('userData');
             if (userDataJSON !== null) {
                 const userData = JSON.parse(userDataJSON);
-                // Agora você pode usar os dados do usuário (userData) como necessário
                 const profileImage = userData.profileImage;
                 const username = userData.username;
                 setImagem(profileImage);

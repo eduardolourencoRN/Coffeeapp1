@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
     View,
-    Text,
     Image,
     TouchableOpacity,
     Dimensions,
@@ -26,7 +25,6 @@ function HeaderHome({ navigation }) {
             const userDataJSON = await AsyncStorage.getItem('userData');
             if (userDataJSON !== null) {
                 const userData = JSON.parse(userDataJSON);
-                // Agora você pode usar os dados do usuário (userData) como necessário
                 const profileImage = userData.profileImage;
 
                 setImagem(profileImage);
@@ -81,7 +79,7 @@ function HeaderHome({ navigation }) {
                     style={{
                         width: 200,
                         height: 110,
-                        marginLeft: 20,
+                        marginLeft: 10,
                     }}
                     tintColor={COLORS.primaryOrangeHex}
                 />
@@ -90,7 +88,6 @@ function HeaderHome({ navigation }) {
                 <TouchableOpacity
                     style={{ alignItems: 'center', justifyContent: 'center' }}
                     onPress={navigation}
-                    ss
                 >
                     <Image
                         style={{
@@ -116,7 +113,6 @@ function HeaderHome({ navigation }) {
                 <TouchableOpacity
                     style={{ alignItems: 'center', justifyContent: 'center' }}
                     onPress={navigation}
-                    ss
                 >
                     <Image
                         style={{

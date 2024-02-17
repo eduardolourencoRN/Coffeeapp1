@@ -3,7 +3,6 @@ import COLORS from '../colors/colors';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
-
 const styles = StyleSheet.create({
     containerPrimary: {
         width: width,
@@ -224,7 +223,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         width: 60,
         height: 60,
-        backgroundColor: COLORS.secondaryBlackRGBA,
+        backgroundColor: COLORS.primaryGreyHex,
         marginLeft: 10,
         marginTop: 10,
         justifyContent: 'center',
