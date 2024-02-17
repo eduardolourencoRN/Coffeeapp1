@@ -3,7 +3,7 @@ CoffeeApp é uma aplicação para gerenciamento de produtos relacionados ao caf�
 
 # GIF
 
-<img src="gif.gif" alt="Coffee App" width="370" height="600">
+<img src="gifV.mp4" alt="Coffee App" width="370" height="600">
 
 
 Instalação
