@@ -1,0 +1,372 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.eduardostark23.appcafeteria"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:4:3-75
+11-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:4:20-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:2:3-64
+12-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:2:20-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:3:3-77
+13-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:3:20-75
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:5:3-63
+14-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:5:20-61
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:6:3-78
+15-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:6:20-76
+16
+17    <queries>
+17-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:7:3-13:13
+18        <intent>
+18-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:8:5-12:14
+19            <action android:name="android.intent.action.VIEW" />
+19-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:9:7-58
+19-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:9:15-56
+20
+21            <category android:name="android.intent.category.BROWSABLE" />
+21-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:10:7-67
+21-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:10:17-65
+22
+23            <data android:scheme="https" />
+23-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:11:7-37
+23-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:11:13-35
+24        </intent>
+25        <!-- Query open documents -->
+26        <intent>
+26-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:18
+27            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+27-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-79
+27-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:21-76
+28        </intent>
+29        <intent>
+29-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-21:18
+30
+31            <!-- Required for picking images from the camera roll if targeting API 30 -->
+32            <action android:name="android.media.action.IMAGE_CAPTURE" />
+32-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-73
+32-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:21-70
+33        </intent>
+34        <intent>
+34-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-26:18
+35
+36            <!-- Required for picking images from the camera if targeting API 30 -->
+37            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+37-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-80
+37-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:21-77
+38        </intent>
+39        <intent>
+39-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:10:9-16:18
+40            <action android:name="android.intent.action.GET_CONTENT" />
+40-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:11:13-72
+40-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:11:21-69
+41
+42            <category android:name="android.intent.category.OPENABLE" />
+42-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:13:13-73
+42-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:13:23-70
+43
+44            <data android:mimeType="*/*" />
+44-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:11:7-37
+45        </intent>
+46    </queries>
+47
+48    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+48-->[:react-native-community_netinfo] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+48-->[:react-native-community_netinfo] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
+49    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for picking images from camera directly -->
+49-->[:react-native-community_netinfo] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
+49-->[:react-native-community_netinfo] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-73
+50    <uses-permission android:name="android.permission.CAMERA" />
+50-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-65
+50-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-62
+51    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+51-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-76
+51-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-73
+52    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+52-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-75
+52-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:22-72
+53    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+53-->[:expo-media-library] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-media-library\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-75
+53-->[:expo-media-library] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-media-library\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-72
+54    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+54-->[:expo-media-library] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-media-library\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-80
+54-->[:expo-media-library] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-media-library\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-77
+55
+56    <permission
+56-->[androidx.core:core:1.12.0] C:\Users\acern\.gradle\caches\transforms-3\97dafb02ce1c76f135d92386cd4ea378\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+57        android:name="com.eduardostark23.appcafeteria.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+57-->[androidx.core:core:1.12.0] C:\Users\acern\.gradle\caches\transforms-3\97dafb02ce1c76f135d92386cd4ea378\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+58        android:protectionLevel="signature" />
+58-->[androidx.core:core:1.12.0] C:\Users\acern\.gradle\caches\transforms-3\97dafb02ce1c76f135d92386cd4ea378\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+59
+60    <uses-permission android:name="com.eduardostark23.appcafeteria.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+60-->[androidx.core:core:1.12.0] C:\Users\acern\.gradle\caches\transforms-3\97dafb02ce1c76f135d92386cd4ea378\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+60-->[androidx.core:core:1.12.0] C:\Users\acern\.gradle\caches\transforms-3\97dafb02ce1c76f135d92386cd4ea378\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+61
+62    <application
+62-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:3-32:17
+63        android:name="com.eduardostark23.appcafeteria.MainApplication"
+63-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:16-47
+64        android:allowBackup="true"
+64-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:162-188
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.12.0] C:\Users\acern\.gradle\caches\transforms-3\97dafb02ce1c76f135d92386cd4ea378\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+66        android:debuggable="true"
+67        android:extractNativeLibs="false"
+68        android:icon="@mipmap/ic_launcher"
+68-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:81-115
+69        android:label="@string/app_name"
+69-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:48-80
+70        android:roundIcon="@mipmap/ic_launcher_round"
+70-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:116-161
+71        android:theme="@style/AppTheme"
+71-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:14:189-220
+72        android:usesCleartextTraffic="true" >
+72-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\debug\AndroidManifest.xml:6:18-53
+73        <meta-data
+73-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:15:5-83
+74            android:name="expo.modules.updates.ENABLED"
+74-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:15:16-59
+75            android:value="false" />
+75-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:15:60-81
+76        <meta-data
+76-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:16:5-93
+77            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+77-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:16:16-68
+78            android:value="50.0.0" />
+78-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:16:69-91
+79        <meta-data
+79-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:17:5-105
+80            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+80-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:17:16-80
+81            android:value="ALWAYS" />
+81-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:17:81-103
+82        <meta-data
+82-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:18:5-99
+83            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+83-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:18:16-79
+84            android:value="0" />
+84-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:18:80-97
+85
+86        <activity
+86-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:5-30:16
+87            android:name="com.eduardostark23.appcafeteria.MainActivity"
+87-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:15-43
+88            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
+88-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:44-134
+89            android:exported="true"
+89-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:256-279
+90            android:launchMode="singleTask"
+90-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:135-166
+91            android:theme="@style/Theme.App.SplashScreen"
+91-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:210-255
+92            android:windowSoftInputMode="adjustResize" >
+92-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:19:167-209
+93            <intent-filter>
+93-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:20:7-23:23
+94                <action android:name="android.intent.action.MAIN" />
+94-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:21:9-60
+94-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:21:17-58
+95
+96                <category android:name="android.intent.category.LAUNCHER" />
+96-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:22:9-68
+96-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:22:19-66
+97            </intent-filter>
+98            <intent-filter>
+98-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:24:7-29:23
+99                <action android:name="android.intent.action.VIEW" />
+99-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:9:7-58
+99-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:9:15-56
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:26:9-67
+101-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:26:19-65
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:10:7-67
+102-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:10:17-65
+103
+104                <data android:scheme="com.eduardostark23.appcafeteria" />
+104-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:11:7-37
+104-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:11:13-35
+105            </intent-filter>
+106        </activity>
+107        <activity
+107-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:31:5-106
+108            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+108-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:31:15-79
+109            android:exported="false" />
+109-->C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\android\app\src\main\AndroidManifest.xml:31:80-104
+110
+111        <provider
+111-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-30:20
+112            android:name="expo.modules.filesystem.FileSystemFileProvider"
+112-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-74
+113            android:authorities="com.eduardostark23.appcafeteria.FileSystemFileProvider"
+113-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-74
+114            android:exported="false"
+114-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+115            android:grantUriPermissions="true" >
+115-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-47
+116            <meta-data
+116-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-29:70
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-67
+118                android:resource="@xml/file_system_provider_paths" />
+118-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-67
+119        </provider>
+120
+121        <service
+121-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-42:19
+122            android:name="com.google.android.gms.metadata.ModuleDependencies"
+122-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-78
+123            android:enabled="false"
+123-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-36
+124            android:exported="false" >
+124-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-37
+125            <intent-filter>
+125-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-37:29
+126                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+126-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:17-94
+126-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:25-91
+127            </intent-filter>
+128
+129            <meta-data
+129-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:13-41:36
+130                android:name="photopicker_activity:0:required"
+130-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-63
+131                android:value="" />
+131-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:17-33
+132        </service>
+133
+134        <activity
+134-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:44:9-46:59
+135            android:name="com.canhub.cropper.CropImageActivity"
+135-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-64
+136            android:exported="true"
+136-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:35:13-36
+137            android:theme="@style/Base.Theme.AppCompat" /> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+137-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-56
+138        <provider
+138-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:9-56:20
+139            android:name="expo.modules.imagepicker.fileprovider.ImagePickerFileProvider"
+139-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-89
+140            android:authorities="com.eduardostark23.appcafeteria.ImagePickerFileProvider"
+140-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:50:13-75
+141            android:exported="false"
+141-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:13-37
+142            android:grantUriPermissions="true" >
+142-->[:expo-image-picker] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:52:13-47
+143            <meta-data
+143-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-29:70
+144                android:name="android.support.FILE_PROVIDER_PATHS"
+144-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-67
+145                android:resource="@xml/image_picker_provider_paths" />
+145-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-67
+146        </provider>
+147
+148        <meta-data
+148-->[:expo-modules-core] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:89
+149            android:name="org.unimodules.core.AppLoader#react-native-headless"
+149-->[:expo-modules-core] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-79
+150            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+150-->[:expo-modules-core] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-86
+151        <meta-data
+151-->[:expo-modules-core] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-15:45
+152            android:name="com.facebook.soloader.enabled"
+152-->[:expo-modules-core] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-57
+153            android:value="true" />
+153-->[:expo-modules-core] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-33
+154
+155        <provider
+155-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:23:9-31:20
+156            android:name="com.canhub.cropper.CropFileProvider"
+156-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:24:13-63
+157            android:authorities="com.eduardostark23.appcafeteria.cropper.fileprovider"
+157-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:25:13-72
+158            android:exported="false"
+158-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:26:13-37
+159            android:grantUriPermissions="true" >
+159-->[com.github.CanHub:Android-Image-Cropper:4.3.1] C:\Users\acern\.gradle\caches\transforms-3\b983718b75a4d094274a9620f8f51378\transformed\jetified-Android-Image-Cropper-4.3.1\AndroidManifest.xml:27:13-47
+160            <meta-data
+160-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-29:70
+161                android:name="android.support.FILE_PROVIDER_PATHS"
+161-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-67
+162                android:resource="@xml/library_file_paths" />
+162-->[:expo-file-system] C:\Users\acern\Downloads\Coffeeapp1-main\Coffeeapp1-main\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-67
+163        </provider>
+164        <provider
+164-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+165            android:name="androidx.startup.InitializationProvider"
+165-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+166            android:authorities="com.eduardostark23.appcafeteria.androidx-startup"
+166-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+167            android:exported="false" >
+167-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+168            <meta-data
+168-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+169                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+169-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+170                android:value="androidx.startup" />
+170-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acern\.gradle\caches\transforms-3\4dbb3f58a9fd53a0c4eaa8ffb9d2a519\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+171            <meta-data
+171-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\acern\.gradle\caches\transforms-3\e24e73b1e37c5812dcead3a4fc547edd\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+172                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+172-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\acern\.gradle\caches\transforms-3\e24e73b1e37c5812dcead3a4fc547edd\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+173                android:value="androidx.startup" />
+173-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\acern\.gradle\caches\transforms-3\e24e73b1e37c5812dcead3a4fc547edd\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+174            <meta-data
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+175                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+176                android:value="androidx.startup" />
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+177        </provider>
+178
+179        <receiver
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+180            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+181            android:directBootAware="false"
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+182            android:enabled="true"
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+183            android:exported="true"
+183-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+184            android:permission="android.permission.DUMP" >
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+185            <intent-filter>
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+186                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+187            </intent-filter>
+188            <intent-filter>
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+189                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+190            </intent-filter>
+191            <intent-filter>
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+192                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+193            </intent-filter>
+194            <intent-filter>
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+195                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\acern\.gradle\caches\transforms-3\0abc5c8a57f58503d8ea80cd657c72cb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+196            </intent-filter>
+197        </receiver>
+198    </application>
+199
+200</manifest>

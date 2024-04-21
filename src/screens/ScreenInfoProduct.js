@@ -21,12 +21,12 @@ function ItemDetails({ navigation }) {
     const { addCartItem, cartItems, incrementCartItem } = useCoffeeStore();
     const { params: item } = useRoute();
     console.log('fffff', item);
-    const AddCart = (id, name, price, productImage) => {
+    const AddCart = (id, productName, price, productImage) => {
         const existingCartItem = cartItems.find((c) => c.id === id);
         if (existingCartItem) {
             incrementCartItem(existingCartItem.id);
         } else {
-            addCartItem({ id, name, price, productImage, quantity: 1 });
+            addCartItem({ id,productName, price, productImage, quantity: 1 });
         }
     };
 
@@ -107,7 +107,7 @@ function ItemDetails({ navigation }) {
                         onPress={() =>
                             AddCart(
                                 item.id,
-                                item.name,
+                                item.productName,
                                 item.price,
                                 item.productImage,
                             )

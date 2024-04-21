@@ -181,11 +181,10 @@ const styles = StyleSheet.create({
         width: width * 0.9,
         height: height * 0.2,
         backgroundColor: COLORS.primaryDarkGreyHex,
-        borderRadius: 20,
+        borderRadius: 12,
         alignItems: 'center',
         flexDirection: 'row',
         marginTop: 10,
-
         gap: 6,
     },
     containerCartItems: {

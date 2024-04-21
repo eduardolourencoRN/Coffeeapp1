@@ -42,6 +42,7 @@ function HomeScreen({ navigation, route }) {
                     (category) => category.name,
                 );
                 setCategories(filteredCategories);
+                console.log('categories', categories)
                 setSelectedCategory(filteredCategories[0]); // Seleciona a primeira categoria após o fetch
             } catch (error) {
                 console.error('Erro ao buscar categorias:', error);
@@ -152,6 +153,7 @@ function HomeScreen({ navigation, route }) {
                         <FlatList
                             data={categories}
                             renderItem={({ item }) => (
+                                
                                 <TouchableOpacity
                                     onPress={() => handleCategoryPress(item)}
                                     style={[
@@ -159,16 +161,18 @@ function HomeScreen({ navigation, route }) {
                                         selectedCategory === item && {
                                             backgroundColor:
                                                 COLORS.primaryOrangeHex,
-                                            width: item.lenght > 6 && 150,
+                                            width: item?.lenght > 6 && 150,
                                         },
                                     ]}
                                 >
-                                    <View>
+                                    
+                                    <View style={{  width:item?.lenght > 12 && 150,}}>
                                         <Text
                                             style={[
                                                 styles.title,
                                                 selectedCategory === item && {
                                                     color: 'white',
+                                                    
                                                 },
                                             ]}
                                         >
